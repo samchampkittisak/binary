@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kitichamp.binary.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#e0e0d1">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#00F6FE"
+            android:text="+1" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00B2FE"
+            android:text="+10"
+            android:layout_toRightOf="@+id/button"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/button100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0079FE"
+            android:text="+100"
+            android:layout_toRightOf="@+id/button10"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/button1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#002FFE"
+            android:text="+1000"
+            android:layout_toRightOf="@+id/button100"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/buttons1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FEFF00"
+            android:text="-1"
+            android:layout_below="@+id/button"/>
+
+        <Button
+            android:id="@+id/buttons10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFD200"
+            android:text="-10"
+            android:layout_toRightOf="@+id/buttons1"
+            android:layout_below="@+id/button10"/>
+
+        <Button
+            android:id="@+id/buttons100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF9F00"
+            android:text="-100"
+            android:layout_toRightOf="@+id/buttons10"
+            android:layout_below="@+id/button100"/>
+
+        <Button
+            android:id="@+id/buttons1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF4A00"
+            android:text="-1000"
+            android:layout_toRightOf="@+id/buttons100"
+            android:layout_below="@+id/button1000"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FF93FD"
+        app:layout_constraintTop_toBottomOf="@+id/l1">
+        <Button
+            android:id="@+id/buttonclr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLR"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+        <Button
+            android:id="@+id/buttonset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="set"
+            />
+        <EditText
+            android:id="@+id/editset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:layout_margin="2dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/l3">
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/b10"
+            app:layout_constraintTop_toBottomOf="@+id/l3"
+            android:textSize="25sp"/>
+
+        <TextSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/l3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/li1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/b2"
+            android:textSize="25sp"/>
+
+        <TextSwitcher
+            android:id="@+id/sw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/switcher"></TextSwitcher></LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">แปลงเลขฐานสอง</string>
+
+    <string name="hello_world">สวัสดีชาวโลก!</string>
+    <string name="action_search">ค้นหา</string>
+    <string name="action_refresh">รีเฟรส</string>
+    <string name="action_settings">ตั้งค่า</string>
+    <color name="colorbg1">#FF7F27</color>
+    <string name="b10">เลขฐานสิบ :</string>
+    <string name="b2">เลขฐานสอง :</string>
+</resources>
